@@ -1,4 +1,4 @@
-def b_consecutives ( pattern:list , max_consecutives:int)->bool:
+def b_consecutives ( pattern:list , max_consecutives:int)->list[list]:
     """
     detects if there are consecutive numbers in the pattern
     it could be a consecutive pair 2 times 
@@ -39,6 +39,11 @@ def b_consecutives ( pattern:list , max_consecutives:int)->bool:
 
     print(f"we have found the following : {consecutive_sequences}")
     
+    return  consecutive_sequences
+
+
+
+
 def main():
     mypattern:list[int] = [1,2,3,32,33]
     print(f"the pattern is {mypattern}")
@@ -50,6 +55,7 @@ def main():
 
     mypattern=[1,2,20,24,25,28 ,38,39]
     b_consecutives(mypattern,0) 
+
 if __name__ == "__main__":
     main()
 
