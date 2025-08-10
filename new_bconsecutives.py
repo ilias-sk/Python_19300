@@ -37,7 +37,7 @@ def b_consecutives ( pattern:list , max_consecutives:int)->list[list]:
             matched=0
             sequence_started_at=0
 
-    print(f"we have found the following : {consecutive_sequences}")
+    print(f"we have found the following : {consecutive_sequences} --returning")
     
     return  consecutive_sequences
 
